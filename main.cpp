@@ -9,7 +9,7 @@ namespace fs = boost::filesystem;
 
 int main(const int argc, const char* argv[])
 {
-    fs::path path("/home/hive/Documents");
+    fs::path path(argv[0]);
     Directory startDir(path);
 
     startDir.setupFolders();
