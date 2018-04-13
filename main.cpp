@@ -9,7 +9,7 @@ namespace fs = boost::filesystem;
 
 int main(const int argc, const char* argv[])
 {
-    fs::path path(argv[0]);
+    fs::path path(argv[1]);
     Directory startDir(path);
 
     startDir.setupFolders();
